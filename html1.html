@@ -70,6 +70,11 @@
         text-align:center;
       }
 
+
+      #result5{
+        display:none;
+      }
+
       #result1{
         display:none;
       }
@@ -89,15 +94,7 @@
       }
 
     .imagebackground {
-      background: url("img/culocar2.png");
-      background-repeat:no-repeat;
-      background-size:200px 170px;
-      background-position: center; 
-      position:relative;
-      text-align:center;
-    }
-
-    .textbackground {
+      background: url("img/culocar.png");
       background-repeat:no-repeat;
       background-size:150px 120px;
       background-position: center; 
@@ -105,24 +102,30 @@
       text-align:center;
     }
 
+    .targa {
+      background: url("img/ciao.png");
+      background-repeat:no-repeat;
+      background-size:150px 120px;
+      background-position: center; 
+      position:relative;
+      text-align:center;
+    
+    }
 
-    .text { 
+.text { 
    position: absolute; 
-   top: 76px; 
+   top: 52px; 
    left: 0; 
    width: 100%; 
+   display:none;
 }
-
-    .myParrotText {
-   position: absolute; 
-   top: 82px; 
-   left: 0; 
-   width: 100%; 
-   }
 
     .spostami{
         background-color: #23b7e5;
     }
+  
+
+
     </style>
 
   </head>
@@ -146,66 +149,51 @@
             <div class= "col-md-3 col-sm-3 col-xs-3">
                 <div class="myicon btn-primary st-truck"><i class="fa fa-truck"></i></div>
             </div>  
+
+            <div class="row">
+            <div class= "col-md-3 col-sm-3 col-xs-3">
+                <div class="myicon btn-primary spostami">Spostami</div>
+            </div>  
+            </div>
+
         </div>
       </div>
     </nav>
 <div class="container" >
 
     <div id="result1" class="result">
-        <h3>Inserisci la targa del veicolo</h3>
-        <br>
-        <div class="imagebackground" style="height:170px;">
-          <div id="result5" class="result">
-            
+        <h2>Clicca sulla targa dell'auto</h2>
 
-            <p id="unid" class="myParrotText"></p>
+        <div class="imagebackground" style="height:120px;"> 
 
-            <!-- Text input-->
-            <div class="text">
-              <div class="col-xs-2" style="width:10%; height:2%; left:45%;">
-              <input id="targainput" name="textinput" style="text-align: center; font-size:12px;" type="text" placeholder="" class="form-control input-xs" required="">
-                
-              </div>
-            </div>
-
-          </div>
+           <div class="text">Spiff</div>
         </div>
+     
+ 
 
-           <div class="row">
-            <div class= "col-md-3 col-sm-3 col-xs-3">
-                <button onclick="mySbiff()">ok1</button>
-            </div>  
+         
+        
+      </div>
+
+
+  <div id="result5" class="result">
+<h2>Clicca sulla targa dell'auto</h2>
+        <div class= "targa" style="height:120px;"> </div>
         </div>
-    </div>
+</div>    
 
 
-    <div id="result2" class="result">
-       <h2>Inserisci la targa della moto</h2>
-    </div>
-
-    <div id="result3" class="result">
-        <h2>Inserisci la targa del tre rout</h2>
-    </div>
-
-    <div id="result4" class="result">
-         <h2>Inserisci la targa del Pullman</h2>
-    </div>
 
 
-</div>
 
 
-    <script>
+<script>
 
-
-    function mySbiff(){
-      document.getElementById('unid').innerHTML=document.getElementById('targainput').value;
-      $(".text").hide();
-    };
 
     $(".spostami").click (function(){
         $(".text").show();
     });
+
 
 
       $('.st-car').click (function(){
@@ -240,6 +228,12 @@
         }
         );
 
+
+        $('#load').click (function(){
+          $('.myform').show();
+         
+        }
+        );
 
     </script>
 
