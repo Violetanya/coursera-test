@@ -45,14 +45,32 @@ body {
 	color:white;
 	font-size:1em;
 	padding:0 5% 5% 5%;
-	margin-bottom:5%;
+	position:relative;
+}
 
+.toplink{
+	position:absolute;
+	bottom:1%;
+	right:1%;
+}
+
+
+a:link{
+	color:white;
+}
+
+a:hover{
+	color:#e6f2ff;
+}
+
+a:visited{
+	color:#ff99ff;
 }
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-	.chicken-section{
-		margin:2%;
+	.food-section{
+		padding:1%;
 	}
 
 
@@ -60,16 +78,16 @@ body {
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-	 .chicken-section{
-		margin:5%;
+	 .food-section{
+	 	padding:1%;
 	}
 
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-	  .chicken-section{
-		margin:10%;
+	  .food-section{
+		padding:2%;
 	}
 
 
@@ -77,8 +95,8 @@ body {
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-	  .chicken-section{
-		margin:10%;
+	  .food-section{
+		padding:4%;
 	}
 
 
@@ -87,8 +105,8 @@ body {
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
-	  .chicken-section{
-		margin:10%;
+	  .food-section{
+		padding:1%;
 	}
 
 
