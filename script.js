@@ -46,7 +46,7 @@ WARNING!!! WARNING!!!
 
     for (var i = 0; i < names.length; i++) {
 
-      var firstLetter = names[i].charAt('J'/'j').toLowerCase('j');
+      var firstLetter = names[i].charAt(0).toLowerCase('j');
 
 	  // STEP 11:
 	  // Retrieve the first letter of the current name in the loop.
